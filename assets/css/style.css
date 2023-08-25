@@ -1,0 +1,108 @@
+/* ------------------------------ Custom Colors */
+:root {
+    /* Electric Pink */
+    --pink: #ffa0ff;
+    /* Cosmic Cyan */
+    --cyan: #00FFFF;
+    /* Mystical Purple */
+    --purple: #800080;
+    /* Transcendent Teal */
+    --teal: #008485;
+    /* Midnight Teal */
+    --teal-dark: #00555C;
+    /* Divine Gold */
+    --gold: #FFD700;
+    /* Energetic Orange */
+    --orange: #FFA500;
+    /* Onyx Black */
+    --black: #000000;
+    /* Gun Metal Grey */
+    --grey: #6b6b6b;
+    /* Silver Blush */
+    --silver: #dddddd;
+    /* Pearl White */
+    --white: #FFFFFF;
+}
+
+/* ------------------------------ Hero Section */
+.hero-section {
+    background-color: var(--cyan) !important;
+    color: var(--black) !important;
+}
+
+/* ------------------------------ Alternating Section Styling */
+.section:nth-child(even) {
+    background-color: var(--teal);
+    color: var(--white);
+}
+
+.section:nth-child(odd) {
+    background-color: var(--pink);
+    color: var(--black);
+}
+
+.section:nth-child(even) h2 {
+    border-left: .15em solid orange;
+    padding-left: .15em;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    text-align: left;
+}
+
+.section:nth-child(odd) h2 {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    text-align: right;
+}
+
+.section img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+/* ------------------------------ Custom styling for contact form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: var(--orange);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--teal-dark);
+}
+
+/* ------------------------------ Custom styling for navbar */
+.navbar {
+    background-color: var(--black);
+}
+
+.nav-link {
+    color: var(--white);
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--teal) !important;
+}
