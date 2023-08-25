@@ -3,6 +3,8 @@
 
 This repository contains the source code for a personal CV/resume/portfolio website.
 
+[Live Link](https://kc-7.github.io/personal-website/)
+
 ## How to Run Locally
 
 1. Clone this repository or download as a ZIP file.

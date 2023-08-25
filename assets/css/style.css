@@ -26,7 +26,7 @@
 
 /* ------------------------------ Hero Section */
 .hero-section {
-    background-color: var(--cyan) !important;
+    background-color: var(--pink) !important;
     color: var(--black) !important;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .section:nth-child(odd) {
-    background-color: var(--pink);
+    background-color: var(--cyan);
     color: var(--black);
 }
 
@@ -68,7 +68,29 @@
 }
 
 .section {
-    padding: 60px 0;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.horizontal-wrapper {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+    height: 100%;
+}
+
+.horizontal-section {
+    min-width: 100vw;
+    height: 90vh;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
 }
 
 /* ------------------------------ Custom styling for contact form */
@@ -95,6 +117,8 @@ form {
 
 /* ------------------------------ Custom styling for navbar */
 .navbar {
+    margin-left: 0;
+    margin-right: 0;
     background-color: var(--black);
 }
 
@@ -105,4 +129,25 @@ form {
 
 .nav-link:hover {
     color: var(--teal) !important;
+}
+
+/* Display section on nav bar */
+.active-nav {
+    color: #fff;
+}
+
+/* ------------------------------ Custom Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #6f42c1;  /* Purple color */
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #5a2b96; /* Slightly darker purple for hover effect */
 }

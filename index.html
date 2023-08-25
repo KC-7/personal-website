@@ -1,28 +1,50 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>KC-7 | Personal Portfolio</title>
     <!-- Bootstrap Links -->
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" rel="stylesheet" />
     <!-- Custom CSS -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet" />
     <!-- Font Awesome -->
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/872cb96f02.js"></script>
     <!-- fullPage.js CSS -->
-    <link href="assets/css/fullpage.min.css" rel="stylesheet">
+    <link href="assets/css/fullpage.min.css" rel="stylesheet" />
     <!-- Meta Data -->
     <meta
         content="Personal Portfolio of a Full Stack Developer. Expertise in Web Development, AI &amp; Machine Learning, Cybersecurity, and more."
-        name="description">
+        name="description" />
     <meta content="Full Stack Developer, Web Development, AI, Machine Learning, Cybersecurity, Blockchain, Portfolio"
-        name="keywords">
-    <meta content="Your Name" name="author">
+        name="keywords" />
+    <meta content="Your Name" name="author" />
+    <!-- Custom Scrollbar Styles -->
+    <style>
+        /* Custom Scrollbar Styles */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #6f42c1;
+            /* Purple color */
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #5a2b96;
+            /* Slightly darker purple for hover effect */
+        }
+    </style>
 </head>
 
 <body>
@@ -36,12 +58,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-link" href="#about-me">About Me</a>
+                    <a class="nav-link active-nav" href="#about-me">About Me</a>
                     <a class="nav-link" href="#education">Education</a>
                     <a class="nav-link" href="#experience">Experience</a>
                     <a class="nav-link" href="#skills">Skills</a>
                     <a class="nav-link" href="#projects">Projects</a>
-                    <a class="nav-link" href="#interests-traits">Interests & Traits</a>
+                    <a class="nav-link" href="#interests-traits">Interests &amp; Traits</a>
                     <a class="nav-link" href="#future-aspirations">Future Aspirations</a>
                     <a class="nav-link" href="#references">References</a>
                     <a class="nav-link" href="#contact">Contact</a>
@@ -49,30 +71,42 @@
             </div>
         </div>
     </nav>
-
     <!-- FullPage.js Container -->
     <div id="fullpage">
         <!-- Hero Section -->
         <div
             class="section hero-section bg-primary text-white text-center d-flex justify-content-center align-items-center p-5">
-            <div class="container">
-                <h1 class="display-4">Your Name</h1>
-                <p class="lead">Full Stack Development &amp; Facilities Management Experience</p>
-            </div>
+            <h2>Hero Section Main Heading</h2>
         </div>
 
-        <!-- Sections with Alternating Layout -->
         <!-- About Me Section -->
         <div class="section p-5" id="about-me">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <h2>About Me</h2>
-                        <p>A multi-faceted professional with a decade of experience in facilities management and a
-                            recent full-stack development diploma...</p>
+            <div class="horizontal-wrapper">
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Passionate Developer</h3>
+                        <p>I am a dedicated web developer with a passion for creating engaging and user-friendly websites.</p>
                     </div>
-                    <div class="col-md-5">
-                        <img alt="Objective Image" class="img-fluid rounded" src="assets/img/no-image.png" />
+                    <div class="col-md-4">
+                        <img alt="Developer" src="assets/img/about-me_1.jpg"/>
+                    </div>
+                </div>
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Experienced Professional</h3>
+                        <p>With years of experience, I have honed my skills in both front-end and back-end development.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Experience" src="assets/img/about-me_2.jpg"/>
+                    </div>
+                </div>
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Creative Problem Solver</h3>
+                        <p>I enjoy tackling complex challenges and finding innovative solutions to create exceptional web experiences.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Problem Solver" src="assets/img/about-me_3.jpg"/>
                     </div>
                 </div>
             </div>
@@ -80,14 +114,32 @@
 
         <!-- Education Section -->
         <div class="section p-5" id="education">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5">
-                        <img alt="Education Image" class="img-fluid rounded" src="assets/img/no-image.png" />
+            <div class="horizontal-wrapper">
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Computer Science Degree</h3>
+                        <p>I graduated with a degree in Computer Science from ABC University, specializing in web technologies.</p>
                     </div>
-                    <div class="col-md-7">
-                        <h2>Education</h2>
-                        <p>Full Stack Development Diploma from [Institute Name]...</p>
+                    <div class="col-md-4">
+                        <img alt="Education" src="assets/img/education_1.jpg"/>
+                    </div>
+                </div>
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Advanced Web Development</h3>
+                        <p>My education also includes specialized courses in advanced web development techniques and frameworks.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Advanced Web Development" src="assets/img/education_2.jpg"/>
+                    </div>
+                </div>
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Continuous Learning</h3>
+                        <p>I am committed to continuous learning, staying updated with the latest advancements in the web industry.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Continuous Learning" src="assets/img/education_3.jpg"/>
                     </div>
                 </div>
             </div>
@@ -95,14 +147,32 @@
 
         <!-- Experience Section -->
         <div class="section p-5" id="experience">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <h2>Professional Experience</h2>
-                        <p>Facilities Manager at [Company Name]...</p>
+            <div class="horizontal-wrapper">
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Front-End Developer</h3>
+                        <p>Worked as a front-end developer at XYZ Company, creating stunning user interfaces and responsive designs.</p>
                     </div>
-                    <div class="col-md-5">
-                        <img alt="Experience Image" class="img-fluid rounded" src="assets/img/no-image.png" />
+                    <div class="col-md-4">
+                        <img alt="Front-End Developer" src="assets/img/experience_1.jpg"/>
+                    </div>
+                </div>
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Back-End Expertise</h3>
+                        <p>I also have experience in back-end development, managing databases and server-side functionalities.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Back-End Development" src="assets/img/experience_2.jpg"/>
+                    </div>
+                </div>
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Project Management</h3>
+                        <p>Led cross-functional teams to successfully deliver web projects, ensuring high quality and on-time delivery.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Project Management" src="assets/img/experience_3.jpg"/>
                     </div>
                 </div>
             </div>
@@ -110,59 +180,131 @@
 
         <!-- Skills Section -->
         <div class="section p-5" id="skills">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5">
-                        <img alt="Skills Image" class="img-fluid rounded" src="assets/img/no-image.png" />
+            <div class="horizontal-wrapper">
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Web Development</h3>
+                        <p>Proficient in HTML, CSS, and JavaScript. Experienced in creating dynamic and interactive web applications.</p>
                     </div>
-                    <div class="col-md-7">
-                        <h2>Technical Skills</h2>
-                        <p>Web Development, AI &amp; Machine Learning...</p>
+                    <div class="col-md-4">
+                        <img alt="Web Development" src="assets/img/skills_1.jpg"/>
+                    </div>
+                </div>
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Responsive Design</h3>
+                        <p>Skilled in designing responsive websites that provide a seamless experience across various devices.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Responsive Design" src="assets/img/skills_2.jpg"/>
+                    </div>
+                </div>
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Version Control</h3>
+                        <p>Experienced in using Git for version control and collaborating effectively in team environments.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Version Control" src="assets/img/skills_3.jpg"/>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!-- Projects Section -->
         <div class="section p-5" id="projects">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <h2>Personal Projects</h2>
-                        <p>Generative AI Websites, E-commerce Store...</p>
+            <div class="horizontal-wrapper">
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>E-Commerce Website</h3>
+                        <p>Designed and developed a responsive e-commerce website with a focus on user experience and product showcasing.</p>
                     </div>
-                    <div class="col-md-5">
-                        <img alt="Projects Image" class="img-fluid rounded" src="assets/img/no-image.png" />
+                    <div class="col-md-4">
+                        <img alt="E-Commerce Website" src="assets/img/projects_1.jpg"/>
+                    </div>
+                </div>
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Portfolio Redesign</h3>
+                        <p>Revamped my personal portfolio using modern design trends and advanced animations to showcase my skills.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Portfolio Redesign" src="assets/img/projects_2.jpg"/>
+                    </div>
+                </div>
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Blog Platform</h3>
+                        <p>Developed a custom blog platform with a user-friendly interface and content management system.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Blog Platform" src="assets/img/projects_3.jpg"/>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Interests Section -->
+        <!-- Interests & Traits Section -->
         <div class="section p-5" id="interests-traits">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5">
-                        <img alt="Interests Image" class="img-fluid rounded" src="assets/img/no-image.png" />
+            <div class="horizontal-wrapper">
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Tech Enthusiast</h3>
+                        <p>I have a strong passion for emerging technologies and stay updated with the latest trends in the web development industry.</p>
                     </div>
-                    <div class="col-md-7">
-                        <h2>Personal Interests</h2>
-                        <p>I am interested in...</p>
+                    <div class="col-md-4">
+                        <img alt="Tech Enthusiast" src="assets/img/interests-traits_1.jpg"/>
+                    </div>
+                </div>
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Problem Solver</h3>
+                        <p>I enjoy solving challenging problems and finding elegant solutions that enhance user experiences.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Problem Solver" src="assets/img/interests-traits_2.jpg"/>
+                    </div>
+                </div>
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Creative Thinker</h3>
+                        <p>My creativity shines through in my designs, user interactions, and the way I approach development challenges.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Creative Thinker" src="assets/img/interests-traits_3.jpg"/>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Future Section -->
+        <!-- Future Aspirations Section -->
         <div class="section p-5" id="future-aspirations">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <h2>Future Aspirations</h2>
-                        <p>I want...</p>
+            <div class="horizontal-wrapper">
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Full Stack Expertise</h3>
+                        <p>I aspire to become a full stack expert, combining front-end and back-end skills to create comprehensive web solutions.</p>
                     </div>
-                    <div class="col-md-5">
-                        <img alt="Projects Image" class="img-fluid rounded" src="assets/img/no-image.png" />
+                    <div class="col-md-4">
+                        <img alt="Full Stack Expertise" src="assets/img/future-aspirations_1.jpg"/>
+                    </div>
+                </div>
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Contributing to Open Source</h3>
+                        <p>I plan to contribute to open-source projects and give back to the developer community that has taught me so much.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Open Source Contribution" src="assets/img/future-aspirations_2.jpg"/>
+                    </div>
+                </div>
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Teaching and Mentoring</h3>
+                        <p>I want to share my knowledge by teaching and mentoring aspiring developers, helping them grow in their careers.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Teaching and Mentoring" src="assets/img/future-aspirations_3.jpg"/>
                     </div>
                 </div>
             </div>
@@ -170,14 +312,32 @@
 
         <!-- References Section -->
         <div class="section p-5" id="references">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5">
-                        <img alt="References Image" class="img-fluid rounded" src="assets/img/no-image.png" />
+            <div class="horizontal-wrapper">
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Client Testimonials</h3>
+                        <p>Here are some kind words from clients who have been impressed with my dedication and skills in web development.</p>
                     </div>
-                    <div class="col-md-7">
-                        <h2>References</h2>
-                        <p>Available upon request.</p>
+                    <div class="col-md-4">
+                        <img alt="Client Testimonials" src="assets/img/references_1.jpg"/>
+                    </div>
+                </div>
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Colleague Recommendations</h3>
+                        <p>Colleagues and team members share their experiences working with me and highlight my contributions.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Colleague Recommendations" src="assets/img/references_2.jpg"/>
+                    </div>
+                </div>
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Mentor Feedback</h3>
+                        <p>Feedback from mentors who have guided me in my journey as a developer, shaping my skills and mindset.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Mentor Feedback" src="assets/img/references_3.jpg"/>
                     </div>
                 </div>
             </div>
@@ -185,63 +345,48 @@
 
         <!-- Contact Section -->
         <div class="section p-5" id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <h2>Contact</h2>
-                        <p>For any inquiries or collaboration opportunities, feel free to reach out!</p>
-                        <form action="mailto:kieran@kc-7.com" enctype="text/plain" method="post">
-                            <div id="contact">
-                                <form action="mailto:kieran@kc-7.com" enctype="text/plain" method="post">
-                                    <div class="form-group">
-                                        <label for="name">Name:</label>
-                                        <input class="form-control" name="name" required="" type="text" />
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email">Email:</label>
-                                        <input class="form-control" name="email" required="" type="email" />
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="message">Message:</label>
-                                        <textarea class="form-control" name="message" required="" rows="4"></textarea>
-                                    </div>
-                                    <button class="btn btn-primary" type="submit">Send</button>
-                                </form>
-                            </div>
-                        </form>
+            <div class="horizontal-wrapper">
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Let's Connect</h3>
+                        <p>Feel free to reach out to me through email or social media. I'm always excited to connect and collaborate!</p>
                     </div>
-                    <div class="col-md-5">
-                        <img alt="Contact Image" class="img-fluid rounded" src="assets/img/no-image.png" />
+                    <div class="col-md-4">
+                        <img alt="Let's Connect" src="assets/img/contact_1.jpg"/>
+                    </div>
+                </div>
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Project Inquiries</h3>
+                        <p>If you have a project idea or need a skilled developer to bring your vision to life, let's discuss!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Project Inquiries" src="assets/img/contact_2.jpg"/>
+                    </div>
+                </div>
+                <div class="horizontal-section row">
+                    <div class="col-md-8">
+                        <h3>Stay Connected</h3>
+                        <p>Follow me on social media to stay updated with my latest projects, articles, and web development insights.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Stay Connected" src="assets/img/contact_3.jpg"/>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
-
-    <!-- JQuery JS -->
-    <script crossorigin="anonymous" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4Ck4SOF4y4Ck4SOF4y4Ck4SOF4y4Ck4SOF4y4C"
-        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-
-    <!-- Bootstrap JS -->
-    <script crossorigin="anonymous" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMt23cez/5paNdF+Tm2JsNR4lhh9vftw6e3+/R5"
-        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
-        
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    </script>
     <!-- Custom JS -->
     <script src="assets/js/script.js"></script>
-
     <!-- fullPage.js JS -->
     <script src="assets/js/fullpage.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            new fullpage('#fullpage', {
-                //options here
-                autoScrolling: true,
-                scrollHorizontally: true
-            });
-        });
-    </script>
-
 </body>
 
 </html>
